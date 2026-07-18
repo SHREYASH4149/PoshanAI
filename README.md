@@ -1,111 +1,217 @@
-# PoshanAI — AI-Powered Anganwadi Nutrition Monitoring System
+# 🌿 PoshanAI – AI-Powered Anganwadi Nutrition Monitoring System
 
-A full-stack web application for monitoring child nutrition in Indian Anganwadi centers, built with React + Vite (frontend) and Node.js + Express (backend).
+An AI-powered full-stack web application designed to assist Anganwadi workers in monitoring child nutrition, growth, attendance, and health records. Built using React, Node.js, Express, Firebase, and modern AI technologies.
 
-## Tech Stack
+## 🚀 Live Demo
 
-| Layer | Technology |
-|---------|------------|
-| Frontend | React 18 + Vite + Tailwind CSS |
-| Routing | React Router DOM v6 |
-| Charts | Recharts |
-| Animations | Framer Motion |
-| Icons | Lucide React |
-| Auth/DB | Firebase Auth + Firestore |
-| Backend | Node.js + Express |
-| AI | OpenAI API (optional) |
-| PDF | jsPDF |
+### 🌐 Frontend
 
-## Features
+https://poshan-ai.vercel.app
 
-- Landing Page with animated sections
-- Firebase Authentication (Login / Register / Roles)
-- Multi-role Dashboards (Worker / Admin / Government)
-- Child Registry with CRUD operations
-- Nutrition Analysis (radar charts, nutrient breakdown)
-- AI Plate Detection (meal photo upload + analysis)
-- AI Chatbot (nutrition Q&A with OpenAI fallback)
-- Attendance Tracking (daily marking)
-- Meal History Logging
-- Child Growth Tracking (weight, height, MUAC charts)
-- Malnutrition Detection (SAM/MAM risk assessment)
-- Geo Tracking (Anganwadi center map)
-- Alerts & Notifications
-- Government Analytics & Reports
-- PDF Report Export
-- Glassmorphism UI with dark theme
+### ⚙️ Backend API
 
-## Quick Start
-
-### Prerequisites
-
-- Node.js v18+
-- Git (optional)
-
-### Setup Client
-
-```powershell
-cd PoshanAI\client
-npm install
-copy .env.example .env
-npm run dev
-```
-
-Frontend runs at:
-
-```
-http://localhost:5173
-```
-
-### Setup Server
-
-```powershell
-cd PoshanAI\server
-npm install
-copy .env.example .env
-npm run dev
-```
-
-Backend runs at:
-
-```
 https://poshanai-backend-zsg8.onrender.com
+
+### 📂 GitHub Repository
+
+https://github.com/SHREYASH4149/PoshanAI
+
+---
+
+## 📖 Overview
+
+PoshanAI is a smart nutrition monitoring platform that digitizes the daily workflow of Anganwadi workers. It enables efficient management of children's health records while providing AI-assisted nutrition analysis, growth monitoring, and reporting.
+
+---
+
+## ✨ Features
+
+### Authentication
+
+* Firebase Authentication
+* Secure Login & Registration
+* Role-Based Access Control
+
+### Child Management
+
+* Child Registration
+* Child Profile Management
+* Attendance Tracking
+* Growth Monitoring
+
+### Nutrition Monitoring
+
+* Nutrition Analysis
+* Meal Tracking
+* Malnutrition Detection
+* Growth Charts
+
+### AI Features
+
+* AI Nutrition Assistant
+* Smart Meal Analysis
+* Nutrition Recommendations
+
+### Dashboards
+
+* Anganwadi Worker Dashboard
+* Admin Dashboard
+* Government Analytics Dashboard
+
+### Reports
+
+* PDF Report Generation
+* Health Reports
+* Nutrition Reports
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Router
+* Recharts
+* Framer Motion
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database & Authentication
+
+* Firebase Authentication
+* Firebase Firestore
+
+### AI & Cloud
+
+* OpenAI API
+* Cloudinary
+
+### Deployment
+
+* Frontend: Vercel
+* Backend: Render
+
+---
+
+## 📁 Project Structure
+
+```text
+PoshanAI/
+├── client/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── server/
+│   ├── routes/
+│   ├── index.js
+│   ├── package.json
+│   └── .env
+│
+└── README.md
 ```
 
-## Firebase Setup
+---
 
-1. Create a Firebase project.
-2. Enable Authentication → Email/Password.
-3. Enable Firestore Database.
-4. Copy Firebase configuration values into `client/.env`.
+## ⚙️ Installation
 
-## Environment Variables
+### Clone Repository
 
-### client/.env
+```bash
+git clone https://github.com/SHREYASH4149/PoshanAI.git
+cd PoshanAI
+```
+
+### Frontend
+
+```bash
+cd client
+npm install
+npm run dev
+```
+
+### Backend
+
+```bash
+cd server
+npm install
+npm start
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Client (.env)
 
 ```env
-VITE_FIREBASE_API_KEY=your_key
-VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your_project_id
-VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
-VITE_FIREBASE_MESSAGING_SENDER_ID=123456789
-VITE_FIREBASE_APP_ID=your_app_id
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+VITE_API_URL=
+VITE_CLOUDINARY_CLOUD_NAME=
+VITE_CLOUDINARY_UPLOAD_PRESET=
 ```
 
-### server/.env
+### Server (.env)
 
 ```env
 PORT=5000
-OPENAI_API_KEY=your_key
+OPENAI_API_KEY=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+NODE_ENV=production
 ```
 
-## Build for Production
+---
 
-```powershell
-cd PoshanAI\client
-npm run build
-```
+## 📸 Screenshots
 
-## License
+Add screenshots here:
+
+* Landing Page
+* Login
+* Dashboard
+* Child Registration
+* Nutrition Analysis
+* Reports
+
+---
+
+## 🚀 Future Enhancements
+
+* Mobile Application
+* Offline Support
+* Multi-language Support
+* AI-Based Nutrition Prediction
+* SMS & WhatsApp Notifications
+* Government Analytics
+
+---
+
+## 👨‍💻 Developer
+
+**Shreyash Yadav**
+
+GitHub: https://github.com/SHREYASH4149
+
+---
+
+## 📄 License
 
 MIT License
+
+---
+
+### ⭐ If you found this project useful, please consider giving it a star on GitHub.
