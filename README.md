@@ -69,7 +69,7 @@ npm run dev
 Backend runs at:
 
 ```
-http://localhost:5000
+https://poshanai-backend-zsg8.onrender.com
 ```
 
 ## Firebase Setup
